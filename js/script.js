@@ -36,3 +36,23 @@ const prevFunction = () => {
 //Event Listeners
 nextBtn.addEventListener('click', nextFunction)
 prevBtn.addEventListener('click', prevFunction)
+
+//Socials text into logo links
+//Query Variables
+let socialsText = document.querySelector('.socials')
+let headerLogo = document.getElementsByClassName('header-logo')
+let logo1 = document.querySelector('#logo1')
+let logo2 = document.querySelector('#logo2')
+console.log(headerLogo)
+console.log(logo1)
+console.log(logo2)
+//Functions
+socialsAway = (event) => {
+    console.log('working')
+    socialsText.remove()
+    event.preventDefault();
+    logo1.classList.remove('header-logo')
+    logo2.classList.remove('header-logo')
+}
+//Event Listeners
+socialsText.addEventListener('click', socialsAway)
