@@ -1,0 +1,249 @@
+/* Fonts */
+@font-face {
+    font-family: 'cinque-terre';
+    src: url('../assets/Fonts/CINQUETERRE.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cinque-terre';
+    src: url('../assets/Fonts/CINQUETERRE-Italic.otf');
+    font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+/* Landing Page */
+body {
+    text-align: center;
+    color: #686763;
+    background-color: whitesmoke;
+    font-family: 'cinque-terre';
+    font-size: 20px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70vh;
+    min-width: 100vh;
+    padding: 10px;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
+}
+.header-nav {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+h1 {
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 50px;
+    height: 75px;
+}
+.header-ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'cinque-terre';
+    font-size: 20px;
+}
+.link {
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.header-link {
+    color: inherit;
+    text-decoration: none;
+    border: solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-color: #686763;
+    padding: 0px 5px;
+    z-index: 0;
+    transition: 1s;
+}
+.header-link:hover {
+    animation: animate 2s 1;
+}
+@keyframes animate {
+    50% {border-color: whitesmoke}
+}
+.logo {
+    height: 30px;
+    width: 30px;
+    opacity: 70%;
+}
+
+.logo:hover {
+    animation: logo 2s 1;
+}
+.header-logo {
+    display: none;
+}
+@keyframes logo {
+    50% {opacity: 20%;}
+}
+.flex-div {
+    min-width: 100vw;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 75%;
+    max-width: 90%;
+}
+.brand-statement {
+    flex-basis: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+}
+.quote {
+    font-size: 30px;
+}
+.work-with-me {
+    border: solid 1px;
+    border-color: #686763;
+    flex-basis: 50%;
+    max-width: 250px;
+    height: 75px;
+    background-color: whitesmoke;
+    color: #686763;
+    font-size: 20px;
+    font-family: 'cinque-terre';
+}
+.work-with-me:hover {
+    animation: borderFill 5s infinite;
+    cursor: pointer;
+}
+@keyframes borderFill {
+    50% {background-color: #686763}
+    50% {color:whitesmoke}    
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+}
+.footer-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 5px;
+}
+/* Scroll Sections */
+.scroll-content{
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #686763;
+    height: 1000px;
+
+/* Parallax Scroll */
+    background-image:url('../assets/Images/orfeas-green-G5A5ZNjS2tE-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+/* About Me Scroll Section */
+.about-me-container {
+    display: flex;
+    justify-content: right;
+    margin-top:30px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+.profile-pic {
+    height: 350px;
+    border: #686763 1px solid;
+    border-radius: 10%;
+    margin-top: 60px;
+}
+.about-me-blurb {
+    color: #686763;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
+    border: #686763 1px solid;
+    margin: 25px;
+    margin-right: 5%;
+    padding: 20px;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    line-height: 33px;
+    box-shadow: 20px 20px 50px grey;
+    max-width: 350px;
+
+}
+/* Projects Carousel */
+.project-title-container {
+    display: flex;
+    justify-content: center;
+}
+.project-title{
+    color:whitesmoke;
+    font-size: 60px;
+    margin-top: 20px;
+    
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.carousel-image {
+    display: none;
+    height: 350px;
+    border: solid 1px #686763;
+    box-shadow: 20px 20px 50px grey;
+}
+.carousel-image:first-of-type {
+    display: block;
+}
+.prev-button, .next-button {
+    height: 50px;
+    width: 50px;
+    margin-top: 20%;
+    font-family: 'cinque-terre';
+    font-size: 25px;
+    font-style: italic;
+    color: #686763;
+    background-color: whitesmoke;
+    border: #686763 1px solid;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+.about-me-container {
+    display: flex;
+    justify-content: center;
+}
+.header-ul {
+    font-size: 30px;
+}
+.logo {
+    height: 40px;
+    width: 40px
+}
+.brand-statement {
+    flex-basis: 80%;
+    font-size: 25px;
+}
+.work-with-me {
+    max-width: 300px;
+    margin-left: 0px;
+}
+.prev-button, .next-button {
+    margin-top: 11%;
+}
+}
