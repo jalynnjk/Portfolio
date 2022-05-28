@@ -1,37 +1,48 @@
+/*  */
 @font-face {
-    font-family: Nesans-Signature;
-    src: url(assets/Fonts/Nesans-Signature.ttf) format(truetype);
+    font-family: 'cinque-terre';
+    src: url('../assets/Fonts/CINQUETERRE.otf');
+    font-style: normal;
 }
+@font-face {
+    font-family: 'cinque-terre';
+    src: url('../assets/Fonts/CINQUETERRE-Italic.otf');
+    font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 body {
     text-align: center;
     color: #686763;
-    background-color: #f3edde;
+    background-color: whitesmoke;
+    font-family: 'cinque-terre';
+    font-size: 20px;
 }
 header {
-    background-color: #cdd1bf;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 70vh;
     min-width: 100vh;
     padding: 10px;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
 }
 .header-nav {
-    flex-basis: 59%;
-    height: 75px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
 }
-
 h1 {
-    flex-basis: 40%;
+    flex-basis: 100%;
     text-align: left;
-    font-size: 30px;
+    font-size: 50px;
     height: 75px;
-    font-family: Nesans-Signature;
 }
 .header-ul {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     gap: 5px;
+    font-family: 'cinque-terre';
+    font-size: 20px;
 }
 .link {
     margin-top: 8px;
@@ -40,14 +51,30 @@ h1 {
 .header-link {
     color: inherit;
     text-decoration: none;
+    border: solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-color: #686763;
+    padding: 0px 5px;
+    z-index: 0;
+    transition: 1s;
+}
+.header-link:hover {
+    animation: animate 3s 1;
+}
+@keyframes animate {
+    50% {border-color: whitesmoke}
 }
 .logo {
     height: 30px;
     width: 30px;
+    opacity: 70%;
 }
 .logo:hover {
-    height: 35px;
-    width: 35px;
+    animation: logo 2s 1;
+}
+@keyframes logo {
+    50% {opacity: 20%;}
 }
 .flex-div {
     min-width: 100vw;
@@ -59,30 +86,40 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 50%;
+    max-width: 75%;
 }
 .brand-statement {
     flex-basis: 100%;
     line-height: 30px;
-}
-.brand-statement::first-letter {
     font-size: 30px;
+    font-family: 'Playfair Display';
 }
 .quote {
     font-size: 30px;
-    display: inline-block;
 }
 .work-with-me {
-    border: solid 3px;
+    border: solid 1px;
+    border-color: #686763;
     flex-basis: 50%;
     height: 75px;
-    background-color: #cdd1bf;
-    color: #283618;
+    background-color: whitesmoke;
+    color: #686763;
     font-size: 20px;
+    font-family: 'cinque-terre';
 }
 .work-with-me:hover {
-    background-color: #283618;
-    color: #cdd1bf;
+    animation: borderFill 5s infinite;
+    cursor: pointer;
+}
+@keyframes borderFill {
+    50% {background-color: #686763}
+    50% {color:whitesmoke}    
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
 }
 .footer-nav {
     display: flex;
@@ -99,46 +136,80 @@ h1 {
 .scroll-content{
     border-top: solid;
     border-bottom: solid;
-    border-color: #283618;
+    border-color: black;
     height: 1000px;
 
 /* Parallax Scroll */
-    background-image:url(../assets/Untitled_Artwork.png);
+    background-image:url('../assets/Images/orfeas-green-G5A5ZNjS2tE-unsplash.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
 }
+
 /* About Me Scroll Section */
 .about {
     display: flex;
     justify-content: right;
-    margin-top:40px;
+    margin-top:30px;
     margin-left: 50px;
 }
 .about-me-blurb {
-    color: #283618;
-    background-color: #f3edde;
-    border: #283618 solid 1px;
+    color: #686763;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
     padding: 25px;
     margin: 10px;
-    font-size: 22px;
-    max-width: 30%;
-}
-.projects {
-    display: flex;
-    justify-content: space-around;
-}
-.project-video {
-    background-color: gray;
-    margin-top: 100px;
-    margin: 30px;
-    height: 300px;
-    width: 300px;
+    margin-right: 5%;
+    font-size: 30px;
+    max-width: 40%;
+    height: 500px;
+    width: 100px;
+    box-shadow: 20px 20px 50px grey;
 
 }
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.projects-carousel {
+    transform-style: preserve-3d;
+}
+.carousel-image {
+    opacity: 0;
+    position: absolute;
+    margin-top: 3%;
+    flex-basis: 100%;
+    justify-content: center;
+    z-index: 100;
+    height: 350px;
+}
+.carousel-image.initial {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
 
+.prev-button, .next-button {
+    background-color: whitesmoke;
+    border: solid 1px #686763;
+    font-family: 'cinque-terre';
+    font-style: italic;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 1001;
+}
+.prev-button {
+    left:20%;
+}
+.next-button {
+    right:20%;
+}
 /* Tablet/Small Screen Style */
 @media screen and (max-width: 860px) {
 #video-2, #video-3 {
@@ -147,5 +218,14 @@ h1 {
 #video-1 {
     margin-top: 30px;
     margin-bottom: 75px;
+}
+.brand-container {
+    min-width: 75%;
+}
+.brand-statement {
+    font-size: 20px;
+}
+.about-me-blurb {
+    min-width: 50%;
 }
 }
