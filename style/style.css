@@ -86,12 +86,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 75%;
+    min-width: 75%;
+    max-width: 90%;
 }
 .brand-statement {
     flex-basis: 100%;
     line-height: 30px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Playfair Display';
 }
 .quote {
@@ -159,14 +160,17 @@ h1 {
     color: #686763;
     background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
     background-size: cover;
-    padding: 25px;
-    margin: 10px;
+    margin: 25px;
     margin-right: 5%;
-    font-size: 30px;
-    max-width: 40%;
+    padding: 15px;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    line-height: 30px;
+    min-width: 40%;
     height: 500px;
     width: 100px;
     box-shadow: 20px 20px 50px grey;
+    min-width: 50%;
 
 }
 .projects {
@@ -179,6 +183,7 @@ h1 {
     height: 350px;
     margin-top: 10px;
     border: solid 1px #686763;
+    box-shadow: 20px 20px 50px grey;
 }
 .carousel-image:first-of-type {
     display: block;
@@ -189,23 +194,4 @@ h1 {
     font-family: 'cinque-terre';
     font-size: 25px;
     margin-top: 20%;
-}
-/* Tablet/Small Screen Style */
-@media screen and (max-width: 860px) {
-#video-2, #video-3 {
-    display: none;
-}
-#video-1 {
-    margin-top: 30px;
-    margin-bottom: 75px;
-}
-.brand-container {
-    min-width: 75%;
-}
-.brand-statement {
-    font-size: 20px;
-}
-.about-me-blurb {
-    min-width: 50%;
-}
 }
