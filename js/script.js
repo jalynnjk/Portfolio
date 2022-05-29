@@ -1,11 +1,12 @@
 //Work with me button will open user's default email program//
-let workWithMeBtn = document.querySelector('.work-with-me');
-let sendEmail = function () {
+let workWithMeBtns = document.querySelectorAll('.work-with-me');
+workWithMeBtns.forEach((btn) => {
+btn.addEventListener('click', () => {
 	window.open(
-		'mailto:jalynnking@gmail.com?subject=Regarding your portfolio...&body=`${workWithMeBtn}`'
+		'mailto:jalynnking@gmail.com?subject=Regarding your portfolio...'
 	);
-};
-workWithMeBtn.addEventListener('click', sendEmail);
+});
+})
 
 //Projects Carousel//
 //Indexes
