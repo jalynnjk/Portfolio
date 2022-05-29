@@ -247,3 +247,42 @@ h1 {
     margin-top: 11%;
 }
 }
+
+/* Projects Modal */
+.projHeader {
+    height: 10vh;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.projH1 {
+    flex-basis: 40%;
+}
+.projNav {
+    flex-basis: 40%;
+}
+.projUl {
+    font-size: 20px;
+    margin-top: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+.projects-modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+}
+.project-video {
+    width: 400px;
+}
+.return {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
