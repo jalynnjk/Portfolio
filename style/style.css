@@ -25,7 +25,7 @@ header {
     height: 70vh;
     min-width: 100vh;
     padding: 10px;
-    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-image: url('../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg');
     background-size: cover;
 }
 .header-nav {
@@ -37,6 +37,8 @@ h1 {
     text-align: left;
     font-size: 50px;
     height: 75px;
+    margin-left: 18px;
+    margin-top: 10px;
 }
 .header-ul {
     display: flex;
@@ -172,7 +174,7 @@ h1 {
 }
 .about-me-blurb {
     color: #686763;
-    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-image: url('../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg');
     background-size: cover;
     border: #686763 1px solid;
     margin: 25px;
@@ -203,9 +205,10 @@ h1 {
 }
 .carousel-image {
     display: none;
-    height: 350px;
+    width: 500px;
     border: solid 1px #686763;
     box-shadow: 20px 20px 50px grey;
+    margin-top: 10px;
 }
 .carousel-image:first-of-type {
     display: block;
@@ -213,7 +216,7 @@ h1 {
 .prev-button, .next-button {
     height: 50px;
     width: 50px;
-    margin-top: 20%;
+    margin-top: 15%;
     font-family: 'cinque-terre';
     font-size: 25px;
     font-style: italic;
@@ -243,8 +246,12 @@ h1 {
     max-width: 300px;
     margin-left: 0px;
 }
+.carousel-image {
+    width: 600px;
+    margin-top: 10px;
+}
 .prev-button, .next-button {
-    margin-top: 11%;
+    margin-top: 10%;
 }
 }
 
@@ -253,12 +260,14 @@ h1 {
     height: 10vh;
     flex-wrap: nowrap;
     justify-content: space-between;
+    background-image: none;
 }
 .projH1 {
     flex-basis: 40%;
 }
 .projNav {
     flex-basis: 40%;
+    margin-top: 10px;
 }
 .projUl {
     font-size: 20px;
@@ -271,18 +280,43 @@ h1 {
     height: 100%;
     width: 100%;
 }
+
 .video-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 50px;
+    gap: 40px;
+    margin-top: 30px;
 }
 .project-video {
     width: 400px;
+    border: solid 1px #686763;
 }
 .return {
     list-style: none;
     text-decoration: none;
     color: inherit;
+}
+.projBtn {
+    width: 125px;
+    height: 50px;
+    font-size: 16px;
+}
+.projNav {
+    display: flex;
+    gap: 10px;
+    height: 35px;
+}
+footer {
+    margin-top: 10px;
+}
+@media screen and (min-width: 900px){
+    .projUl {
+        margin-left: 60px;
+    }
+    .logo {
+        height: 30px;
+        width: 30px;
+
+    }
 }
