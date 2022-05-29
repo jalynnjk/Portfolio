@@ -1,3 +1,14 @@
+# Portfolio: landing page
+<img width="1434" alt="Screen Shot 2022-05-29 at 8 51 58 AM" src="https://user-images.githubusercontent.com/104743186/170869547-5aec3e88-a883-455f-972f-507bfef02204.png">
+
+## Languages Used to Build Product
+- HTML
+- CSS
+- JavaScript
+
+## Installation Instructions
+Fork this repo above and clone into terminal using the SSH code. 
+
 ## Wire Frames
 <img width="712" alt="Screen Shot 2022-05-24 at 10 55 26 PM" src="https://user-images.githubusercontent.com/104743186/170170371-108f87b7-b6b0-47f3-84f0-8f8fd78692c1.png">
 <img width="711" alt="Screen Shot 2022-05-24 at 10 55 50 PM" src="https://user-images.githubusercontent.com/104743186/170170398-880a8ec3-8982-4087-990e-51fa7ea76669.png">
@@ -37,6 +48,3 @@
 - Button to download the creator's contact info
 - Add a game to the website
 - Attractive and innovative CSS styling
-### Anything Else You'd Like Us to Know
-
-
