@@ -255,21 +255,86 @@ h1 {
 }
 }
 
+/* Resume Modal */
+.resume-modal {
+    display: none;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.resume-header {
+    height: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: none;
+}
+.resume-h1 {
+    flex-basis: 40%;
+}
+.resume-nav {
+    flex-basis: 40%;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.resume-ul {
+    font-size: 20px;
+    margin-top: 8px;
+    height: 30px;
+}
+.resume-footer {
+    margin-top: 50px;
+}
+/* Resume Carousel */
+.resume-carousel-container {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.resume-img {
+    display: none;
+
+    height: 400px;
+    width: 300px;
+    border: solid 1px #686763;
+    box-shadow: 20px 20px 50px grey;
+    margin-top: 10px;
+}
+.resume-img:first-of-type {
+    display: block;
+}
+.resume-prev-btn, .resume-next-btn {
+    height: 40px;
+    width: 40px;
+    margin-top: 20%;
+    font-family: 'cinque-terre';
+    font-size: 18px;
+    font-style: italic;
+    color: #686763;
+    background-color: whitesmoke;
+    border: #686763 1px solid;
+    cursor: pointer;
+}
+.resume-next-btn {
+    margin-top: 19%;
+}
 /* Projects Modal */
-.projHeader {
+.proj-header {
     height: 10vh;
     flex-wrap: nowrap;
     justify-content: space-between;
     background-image: none;
 }
-.projH1 {
+.proj-h1 {
     flex-basis: 40%;
 }
-.projNav {
+.proj-nav {
     flex-basis: 40%;
     margin-top: 10px;
 }
-.projUl {
+.proj-ul {
     font-size: 20px;
     margin-top: 8px;
     list-style: none;
@@ -297,12 +362,12 @@ h1 {
     text-decoration: none;
     color: inherit;
 }
-.projBtn {
+.proj-btn {
     width: 125px;
     height: 50px;
     font-size: 16px;
 }
-.projNav {
+.proj-nav {
     display: flex;
     gap: 10px;
     height: 35px;
@@ -311,12 +376,18 @@ footer {
     margin-top: 10px;
 }
 @media screen and (min-width: 900px){
-    .projUl {
-        margin-left: 60px;
+    .proj-header {
+        margin-left: 80px
+    }
+    .proj-ul {
+        margin-left: 140px;
     }
     .logo {
         height: 30px;
         width: 30px;
 
+    }
+    .proj-btn {
+        flex-basis: 35%;
     }
 }
