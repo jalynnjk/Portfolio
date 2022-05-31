@@ -225,7 +225,7 @@ h1 {
     border: #686763 1px solid;
     cursor: pointer;
 }
-
+/* Desktop Styling */
 @media screen and (min-width: 900px) {
 .about-me-container {
     display: flex;
@@ -255,21 +255,102 @@ h1 {
 }
 }
 
+/* Resume Modal */
+.resume-modal {
+    display: none;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.resume-header {
+    height: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: none;
+}
+.resume-h1 {
+    flex-basis: 40%;
+}
+.resume-nav {
+    flex-basis: 40%;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.resume-ul {
+    font-size: 20px;
+    margin-top: 8px;
+    height: 30px;
+}
+.resume-footer {
+    margin-top: 20px;
+}
+/* Resume Carousel */
+.resume-carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.resume-img {
+    display: none;
+    height: 500px;
+    width: 350px;
+    border: solid 1px #686763;
+    box-shadow: 20px 20px 50px grey;
+    margin-top: 10px;
+}
+.resume-img:first-of-type {
+    display: block;
+}
+.resume-prev-btn, .resume-next-btn {
+    height: 40px;
+    width: 40px;
+    margin-top: 25%;
+    font-family: 'cinque-terre';
+    font-size: 18px;
+    font-style: italic;
+    color: #686763;
+    background-color: whitesmoke;
+    border: #686763 1px solid;
+    cursor: pointer;
+}
+.resume-next-btn {
+    margin-top: 24%;
+}
+/* Desktop Styling */
+@media screen and (min-width: 900px){
+.resume-header {
+    margin-left: 80px
+}
+.resume-ul {
+    margin-left: 140px;
+}
+.logo {
+    height: 30px;
+    width: 30px;
+}
+.resume-prev-btn, .resume-next-btn {
+    margin-top: 12%;
+}
+}
 /* Projects Modal */
-.projHeader {
+.proj-header {
     height: 10vh;
     flex-wrap: nowrap;
     justify-content: space-between;
     background-image: none;
 }
-.projH1 {
+.proj-h1 {
     flex-basis: 40%;
 }
-.projNav {
+.proj-nav {
     flex-basis: 40%;
     margin-top: 10px;
 }
-.projUl {
+.proj-ul {
     font-size: 20px;
     margin-top: 8px;
     list-style: none;
@@ -297,12 +378,12 @@ h1 {
     text-decoration: none;
     color: inherit;
 }
-.projBtn {
+.proj-btn {
     width: 125px;
     height: 50px;
     font-size: 16px;
 }
-.projNav {
+.proj-nav {
     display: flex;
     gap: 10px;
     height: 35px;
@@ -310,13 +391,95 @@ h1 {
 footer {
     margin-top: 10px;
 }
+.about-proj {
+    flex-basis: 100%;
+}
+.about-proj:last-child {
+    margin-bottom: 20px;
+}
+.video-desc-container {
+     width: 410px;
+}
+/* Desktop Styling */
 @media screen and (min-width: 900px){
-    .projUl {
-        margin-left: 60px;
+    .proj-header {
+        margin-left: 80px
+    }
+    .proj-ul {
+        margin-left: 140px;
     }
     .logo {
         height: 30px;
         width: 30px;
 
     }
+    .proj-btn {
+        flex-basis: 35%;
+    }
+    .video-desc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+    }
+    .about-proj {
+        margin-top: 15px;
+    }
+}
+/* Contact Card Modal */
+.contact-card {
+    display: none;
+    height: 70vh;
+    width: 40vw;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
+    border: 1px solid #686763;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 30%;
+    padding: 10px;
+}
+.contact-card-image {
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid #686763;
+    margin-left: 30px;
+}
+.contact-ul {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 5px;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.close {
+    height: 20px;
+    flex-basis: 100%;
+}
+.contact-h3 {
+    margin-top: 5px;
+}
+p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+/* Desktop Styling */
+@media screen and (min-width: 900px) {
+.contact-card {
+    width: 400px;
+    left: 35%;
+}
+    .contact-card-image {
+    margin-left: 22%;
+}
+.contact-h1 {
+    margin-left: 19%;
+}
+.contact-ul {
+    margin-left: 42%;
+    margin-top: 20px;
+}
 }
