@@ -42,21 +42,23 @@ const prevFunction = () => {
 nextBtn.addEventListener('click', nextFunction);
 prevBtn.addEventListener('click', prevFunction);
 
-//On Click: Socials Text Turns Into Logo Links//
+//Contact Card: On Clicks Socials will Open Contact Card//
 //Query Variables
-let socialsText = document.querySelector('.socials');
-let headerLogo = document.getElementsByClassName('header-logo');
-let logo1 = document.querySelector('#logo1');
-let logo2 = document.querySelector('#logo2');
+let contactCard = document.querySelector('.contact-card')
+let openCard = document.querySelector('.socials')
+let closeCard = document.querySelector('.contact-card-close')
 //Functions
-socialsAway = (event) => {
-	socialsText.remove();
-	event.preventDefault();
-	logo1.classList.remove('header-logo');
-	logo2.classList.remove('header-logo');
-};
+openContactCard = (event) => {
+	event.preventDefault()
+	contactCard.style.display = 'block'
+}
+closeContactCard = (event) => {
+	event.preventDefault()
+	contactCard.style.display = 'none'
+}
 //Event Listeners
-socialsText.addEventListener('click', socialsAway);
+openCard.addEventListener('click', openContactCard)
+closeCard.addEventListener('click', closeContactCard)
 
 //Open Projects Page as Modal//
 //Query Variables
@@ -93,7 +95,7 @@ let resumeModalBtn = document.querySelector('.resume');
 let resumeModal = document.querySelector('.resume-modal');
 //Functions
 let openResumeModal = (event) => {
-	event.preventDefault()
+	event.preventDefault();
 	resumeModal.style.display = 'block';
 	mainEl.style.display = 'none';
 	headerEl.style.display = 'none';
@@ -104,9 +106,9 @@ resumeModalBtn.addEventListener('click', openResumeModal);
 //Resume Carousel//
 //Indexes declared previously
 //Query Variables
-const resumeImages = document.querySelectorAll('.resume-img')
-let resumePrevBtn = document.querySelector('.resume-prev-btn')
-let resumeNxtBtn = document.querySelector('.resume-next-btn')
+const resumeImages = document.querySelectorAll('.resume-img');
+let resumePrevBtn = document.querySelector('.resume-prev-btn');
+let resumeNxtBtn = document.querySelector('.resume-next-btn');
 //Functions
 const nextResumeImgFunction = () => {
 	prevImageIndex = currentImageIndex;
@@ -128,5 +130,5 @@ const prevResumeImgFunction = () => {
 	resumeImages[prevImageIndex].style.display = 'none';
 };
 //Event Listener
-resumePrevBtn.addEventListener('click', prevResumeImgFunction)
+resumePrevBtn.addEventListener('click', prevResumeImgFunction);
 resumeNxtBtn.addEventListener('click', nextResumeImgFunction);
