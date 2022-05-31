@@ -48,3 +48,8 @@ Fork this repo above and clone into terminal using the SSH code.
 - Button to download the creator's contact info
 - Add a game to the website
 - Attractive and innovative CSS styling
+
+### Details and Pending Issues
+- Issues getting the video descriptions to show when video is hovered over -- will need more looking into.
+- As I get more relevant experience, I look forward to updating the projects and resume page
+- While the small device and desktop displays are well done the mobile display needs more work for easier viewing

@@ -225,7 +225,7 @@ h1 {
     border: #686763 1px solid;
     cursor: pointer;
 }
-/* Desktop Styling */
+/* Landing Page Desktop Styling */
 @media screen and (min-width: 900px) {
 .about-me-container {
     display: flex;
@@ -320,7 +320,7 @@ h1 {
 .resume-next-btn {
     margin-top: 24%;
 }
-/* Desktop Styling */
+/* Resume Page Desktop Styling */
 @media screen and (min-width: 900px){
 .resume-header {
     margin-left: 80px
@@ -400,7 +400,7 @@ footer {
 .video-desc-container {
      width: 410px;
 }
-/* Desktop Styling */
+/* Projects Desktop Styling */
 @media screen and (min-width: 900px){
     .proj-header {
         margin-left: 80px
@@ -429,8 +429,8 @@ footer {
 /* Contact Card Modal */
 .contact-card {
     display: none;
-    height: 70vh;
-    width: 40vw;
+    height: 80vh;
+    width: 45vw;
     background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
     background-size: cover;
     border: 1px solid #686763;
@@ -444,12 +444,15 @@ footer {
     height: 280px;
     border-radius: 50%;
     border: 1px solid #686763;
-    margin-left: 30px;
+    margin-left: 50px;
+}
+.contact-h1 {
+    margin-left: 13%;
 }
 .contact-ul {
     display: flex;
-    margin-left: 110px;
-    margin-top: 5px;
+    margin-left: 130px;
+    margin-top: 15px;
 }
 .contact-container {
     display: flex;
@@ -466,7 +469,11 @@ p {
     margin-top: 10px;
     font-size: 15px;
 }
-/* Desktop Styling */
+.contact-work-with-me {
+    height: 40px;
+    margin-top: 10px;
+}
+/* Contact Card Desktop Styling */
 @media screen and (min-width: 900px) {
 .contact-card {
     width: 400px;
