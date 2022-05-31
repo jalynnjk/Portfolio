@@ -42,7 +42,7 @@ const prevFunction = () => {
 nextBtn.addEventListener('click', nextFunction);
 prevBtn.addEventListener('click', prevFunction);
 
-//Contact Card: On Clicks Socials will Open Contact Card//
+//Contact Card: On Click Socials link will Open Contact Card/Close Link will Close Card//
 //Query Variables
 let contactCard = document.querySelector('.contact-card')
 let openCard = document.querySelector('.socials')
@@ -104,7 +104,7 @@ let openResumeModal = (event) => {
 resumeModalBtn.addEventListener('click', openResumeModal);
 
 //Resume Carousel//
-//Indexes declared previously
+//Indexes Declared Previously
 //Query Variables
 const resumeImages = document.querySelectorAll('.resume-img');
 let resumePrevBtn = document.querySelector('.resume-prev-btn');
