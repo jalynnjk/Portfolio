@@ -225,7 +225,7 @@ h1 {
     border: #686763 1px solid;
     cursor: pointer;
 }
-
+/* Desktop Styling */
 @media screen and (min-width: 900px) {
 .about-me-container {
     display: flex;
@@ -284,20 +284,20 @@ h1 {
     height: 30px;
 }
 .resume-footer {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 /* Resume Carousel */
 .resume-carousel-container {
     display: flex;
+    justify-content: center;
     gap: 5px;
     margin-left: 10px;
     margin-top: 20px;
 }
 .resume-img {
     display: none;
-
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 350px;
     border: solid 1px #686763;
     box-shadow: 20px 20px 50px grey;
     margin-top: 10px;
@@ -308,7 +308,7 @@ h1 {
 .resume-prev-btn, .resume-next-btn {
     height: 40px;
     width: 40px;
-    margin-top: 20%;
+    margin-top: 25%;
     font-family: 'cinque-terre';
     font-size: 18px;
     font-style: italic;
@@ -318,7 +318,23 @@ h1 {
     cursor: pointer;
 }
 .resume-next-btn {
-    margin-top: 19%;
+    margin-top: 24%;
+}
+/* Desktop Styling */
+@media screen and (min-width: 900px){
+.resume-header {
+    margin-left: 80px
+}
+.resume-ul {
+    margin-left: 140px;
+}
+.logo {
+    height: 30px;
+    width: 30px;
+}
+.resume-prev-btn, .resume-next-btn {
+    margin-top: 12%;
+}
 }
 /* Projects Modal */
 .proj-header {
@@ -375,6 +391,7 @@ h1 {
 footer {
     margin-top: 10px;
 }
+/* Desktop Styling */
 @media screen and (min-width: 900px){
     .proj-header {
         margin-left: 80px
