@@ -391,6 +391,12 @@ h1 {
 footer {
     margin-top: 10px;
 }
+.about-proj {
+    flex-basis: 100%;
+}
+.about-proj:last-child {
+    margin-bottom: 20px;
+}
 /* Desktop Styling */
 @media screen and (min-width: 900px){
     .proj-header {
@@ -406,5 +412,14 @@ footer {
     }
     .proj-btn {
         flex-basis: 35%;
+    }
+    .video-desc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+    }
+    .about-proj {
+        margin-top: 15px;
     }
 }
