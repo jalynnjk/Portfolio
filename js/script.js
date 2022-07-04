@@ -89,6 +89,31 @@ videos.forEach((video) => {
 	});
 });
 
+//Projects Modal: Project Mobile/Desktop Video Display Type//
+//Query Variables
+const desktopVideo = document.querySelector('#video-desktop')
+const mobileVideo = document.querySelector('#video-mobile')
+const desktopBtn = document.querySelector('.desktop-icon')
+const mobileBtn = document.querySelector('.mobile-icon');
+//Function and Event Listeners
+let desktopShow = true
+function changeVideoToMobile() {
+	if (desktopShow === true) {
+		mobileVideo.classList.remove('hide')
+		desktopVideo.classList.add('hide')
+		desktopShow = false
+	}
+}
+function changeVideoToDesktop() {
+	if (desktopShow === false) {
+		mobileVideo.classList.add('hide')
+		desktopVideo.classList.remove('hide')
+		desktopShow = true
+	}
+}
+desktopBtn.addEventListener('click', changeVideoToDesktop)
+mobileBtn.addEventListener('click', changeVideoToMobile)
+
 //Open Resume Page as Modal//
 //Query Variables
 let resumeModalBtn = document.querySelector('.resume');
