@@ -194,7 +194,7 @@ h1 {
 }
 .project-title{
     color:whitesmoke;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
     
 }
@@ -205,10 +205,10 @@ h1 {
 }
 .carousel-image {
     display: none;
-    width: 500px;
     border: solid 1px #686763;
     box-shadow: 20px 20px 50px grey;
     margin-top: 10px;
+    max-width: 600px;
 }
 .carousel-image:first-of-type {
     display: block;
@@ -296,8 +296,7 @@ h1 {
 }
 .resume-img {
     display: none;
-    height: 500px;
-    width: 350px;
+    max-height: 700px;
     border: solid 1px #686763;
     box-shadow: 20px 20px 50px grey;
     margin-top: 10px;
@@ -361,17 +360,21 @@ h1 {
     height: 100%;
     width: 100%;
 }
-
 .video-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .project-video {
-    width: 400px;
     border: solid 1px #686763;
+}
+#video-mobile {
+     max-height: 500px;
+}
+#video-desktop {
+    max-height: 300px;
 }
 .return {
     list-style: none;
@@ -393,12 +396,46 @@ footer {
 }
 .about-proj {
     flex-basis: 100%;
-}
-.about-proj:last-child {
     margin-bottom: 20px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-.video-desc-container {
-     width: 410px;
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+}
+.project-languages {
+    font-family: 'playfair-display';
+    font-size: 15px;
+    font-style: italic;
+}
+.github-link {
+    font-size: 15px;
+    color: inherit;
+    text-decoration: underline 1px;
+}
+.github-link:hover {
+    text-decoration: none;
+}
+.desktop-icon {
+    width: 40px;
+    cursor: pointer;
+}
+.desktop-icon:hover {
+    width: 45px;
+}
+.mobile-icon {
+    width: 40px;
+    cursor: pointer;
+}
+.mobile-icon:hover {
+    width: 45px;
+}
+.hide {
+    display: none;
 }
 /* Projects Desktop Styling */
 @media screen and (min-width: 900px){
