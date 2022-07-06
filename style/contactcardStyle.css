@@ -1,0 +1,96 @@
+/* Contact Card Modal */
+.contact-card {
+    display: none;
+    height: 78vh;
+    width: 80vw;
+    align-self: center;
+    background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
+    background-size: cover;
+    border: 1px solid #686763;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 6%;
+    padding: 10px;
+}
+
+.contact-card-image {
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid #686763;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.contact-h1 {
+    margin-left: 13%;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.close {
+    height: 20px;
+    flex-basis: 100%;
+}
+
+.contact-h3 {
+    margin-top: 5px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.contact-work-with-me {
+    height: 40px;
+    margin-top: 10px;
+}
+.contact-navigation {
+    display: flex;
+}
+.contact-ul {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+footer {
+    margin-top: 0;
+}
+
+/* Contact Card Tablet Styling */
+@media screen and (min-width: 450px) {
+    .contact-card {
+        max-width: 400px;
+        left: 20%;
+    }
+
+    .contact-card-image {
+        margin-left: 22%;
+    }
+
+    .contact-h1 {
+        margin-left: 19%;
+    }
+}
+
+/* Contact Card Desktop Styling */
+@media screen and (min-width: 900px) {
+    .contact-card {
+        max-width: 400px;
+        left: 35%;
+    }
+
+    .contact-card-image {
+        margin-left: 22%;
+    }
+
+    .contact-h1 {
+        margin-left: 19%;
+    }
+}
