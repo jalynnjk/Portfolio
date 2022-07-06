@@ -1,8 +1,8 @@
 /* Contact Card Modal */
 .contact-card {
     display: none;
-    height: 78vh;
-    width: 80vw;
+    height: 530px;
+    width: 300px;
     align-self: center;
     background-image: url(../assets/Images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg);
     background-size: cover;
@@ -10,7 +10,7 @@
     position: fixed;
     z-index: 1;
     top: 15%;
-    left: 6%;
+    left: 7%;
     padding: 10px;
 }
 
@@ -35,8 +35,13 @@
 .close {
     height: 20px;
     flex-basis: 100%;
+    opacity: 50%;
 }
-
+.logo {
+    height: 30px;
+    width: 30px;
+    opacity: 70%;
+}
 .contact-h3 {
     margin-top: 5px;
 }
@@ -66,31 +71,25 @@ footer {
 /* Contact Card Tablet Styling */
 @media screen and (min-width: 450px) {
     .contact-card {
-        max-width: 400px;
-        left: 20%;
+        left: 28%;
+        width: 350px;
     }
-
     .contact-card-image {
-        margin-left: 22%;
+        margin-left: 60px;
     }
-
     .contact-h1 {
-        margin-left: 19%;
+        margin: 0px;
+        text-align: center;
     }
 }
 
 /* Contact Card Desktop Styling */
 @media screen and (min-width: 900px) {
     .contact-card {
-        max-width: 400px;
         left: 35%;
     }
 
     .contact-card-image {
-        margin-left: 22%;
-    }
-
-    .contact-h1 {
-        margin-left: 19%;
+        margin-left: 18%;
     }
 }

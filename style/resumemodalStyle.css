@@ -29,9 +29,6 @@
     background-image: none;
     margin: 3px;
 }
-.return {
-    font-size: 15px;
-}
 .resume-h1 {
     flex-basis: 40%;
     font-size: 30px;
@@ -52,8 +49,8 @@
     height: 30px;
 }
 
-.resume-footer {
-    margin-top: 40%;
+.resume-li {
+    padding-top: 4px;
 }
 
 /* Resume Carousel */
@@ -61,7 +58,8 @@
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-top: 20px;
+    margin-top: 75px;
+    margin-bottom: 20px;
 }
 
 .resume-img {
@@ -106,6 +104,10 @@
         margin-left: 140px;
     }
 
+    .resume-carousel-container {
+        margin-top: 50px;
+    }
+
     .resume-img {
         max-height: 650px;
     }
@@ -124,10 +126,6 @@
     }
     .resume-prev-btn {
         margin-top: 252px;
-    }
-
-    .resume-footer {
-        margin-top: 50px;
     }
 
     .proj-btn {
