@@ -1,0 +1,175 @@
+/* Projects Modal */
+.proj-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: none;
+    margin: 3px;
+}
+
+.proj-h1 {
+    flex-basis: 40%;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.proj-nav {
+    flex-basis: 40%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+}
+
+.proj-ul {
+    font-size: 20px;
+    margin-top: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.projects-modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project-video {
+    border: solid 1px #686763;
+}
+
+#video-mobile {
+    max-height: 300px;
+}
+
+#video-desktop {
+    max-width: 350px;
+}
+
+.return {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.proj-btn {
+    width: 125px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.proj-nav {
+    display: flex;
+    gap: 10px;
+    height: 35px;
+}
+
+.project-footer {
+    margin-top: 55%;
+}
+
+.about-proj {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+}
+
+.project-languages {
+    font-family: 'playfair-display';
+    font-size: 15px;
+    font-style: italic;
+}
+
+.github-link {
+    font-size: 15px;
+    color: inherit;
+    text-decoration: underline 1px;
+}
+
+.github-link:hover {
+    text-decoration: none;
+}
+
+.desktop-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.desktop-icon:hover {
+    width: 45px;
+}
+
+.mobile-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.mobile-icon:hover {
+    width: 45px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Projects Desktop Styling */
+@media screen and (min-width: 450px) {
+    .proj-header {
+        margin-left: 10px
+    }
+    .proj-h1 {
+        font-size: 50px;
+    }
+    .proj-ul {
+        margin-left: 140px;
+    }
+
+    .logo {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .proj-btn {
+        flex-basis: 35%;
+    }
+
+    .video-desc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+    }
+
+    .about-proj {
+        margin-top: 15px;
+    }
+     #video-mobile {
+        max-height: 450px;
+    }
+    
+    #video-desktop {
+        max-width: 600px;
+    }
+
+    .project-footer {
+        margin-top: 75px;
+    }
+}
