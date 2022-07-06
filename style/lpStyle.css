@@ -40,6 +40,7 @@ h1 {
     flex-basis: 100%;
     text-align: left;
     font-size: 50px;
+    margin: 5px;
 }
 
 .header-ul {
@@ -60,12 +61,6 @@ h1 {
     padding: 0px 5px;
     z-index: 0;
     transition: 1s;
-}
-
-.logo {
-    height: 30px;
-    width: 30px;
-    opacity: 70%;
 }
 
 .header-logo {
@@ -114,19 +109,6 @@ h1 {
 
 .bold {
     font-weight: 700;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5px;
-    gap: 5px;
 }
 
 /* Scroll Sections */
