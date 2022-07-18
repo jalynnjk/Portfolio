@@ -38,7 +38,7 @@
     width: 100%;
 }
 
-.video-container {
+.video-container:first-of-type {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -46,15 +46,24 @@
     margin-top: 75px;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .project-video {
     border: solid 1px #686763;
 }
 
-#video-mobile {
+#video-mobile, #badjjr-video-mobile {
     max-height: 300px;
 }
 
-#video-desktop {
+#video-desktop, #badjjr-video-desktop {
     max-width: 350px;
 }
 
@@ -162,11 +171,11 @@
     .about-proj {
         margin-top: 15px;
     }
-     #video-mobile {
+     #video-mobile, #badjjr-video-mobile {
         max-height: 450px;
     }
     
-    #video-desktop {
+    #video-desktop, #badjjr-video-desktop {
         max-width: 600px;
     }
 
