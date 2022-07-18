@@ -130,7 +130,7 @@ function changeBadjjrVideoToMobile() {
 	}
 }
 function changeBadjjrVideoToDesktop() {
-	if (desktopShow === false) {
+	if (badjjrDesktopShow === false) {
 		badjjrMobileVideo.classList.add('hide');
 		badjjrDesktopVideo.classList.remove('hide');
 		badjjrDesktopShow = true;
